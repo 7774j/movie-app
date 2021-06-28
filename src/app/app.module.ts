@@ -7,6 +7,7 @@ import { HomeNewReleasesComponent } from './home-new-releases/home-new-releases.
 import { BoxOfficeComponent } from './box-office/box-office.component';
 import { AwardWinningComponent } from './award-winning/award-winning.component';
 import { ViewFinderComponent } from './view-finder/view-finder.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ViewFinderComponent } from './view-finder/view-finder.component';
     HomeNewReleasesComponent,
     BoxOfficeComponent,
     AwardWinningComponent,
-    ViewFinderComponent
+    ViewFinderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
