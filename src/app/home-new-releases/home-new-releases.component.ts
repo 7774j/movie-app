@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { GetMoviesService } from '../shared/services/get-movies.service';
 
 
 @Component({
@@ -17,12 +18,12 @@ imagePath: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWF
 
 
 
-  constructor(private router: Router){
-  }
+  constructor(private router: Router, private getMoviesService: GetMoviesService ){}
 
   ngOnInit(): void {
-    console.log(this.name);
-
+    this.getMoviesService.getPopularMovies().subscribe((result) => {
+      console.log(result);
   }
 
+)}
 }
