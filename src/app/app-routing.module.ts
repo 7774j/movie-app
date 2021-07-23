@@ -10,7 +10,11 @@ const routes: Routes = [
   {path: 'home-new-releases', component: HomeNewReleasesComponent},
   {path: 'trending', component: TrendingComponent},
   {path: 'box-office', component: BoxOfficeComponent},
-  {path: 'view-finder', component: ViewFinderComponent}
+  {path: 'view-finder', component: ViewFinderComponent},
+  {
+    path: 'auth', loadChildren: () => import('./auth/auth.module')
+      .then(mod => mod.AuthModule)
+  }
 ];
 
 @NgModule({

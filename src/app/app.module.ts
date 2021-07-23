@@ -8,8 +8,8 @@ import { TrendingComponent } from './trending/trending.component';
 import { ViewFinderComponent } from './view-finder/view-finder.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
-
 import { StreamingComponent } from './streaming/streaming.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +20,16 @@ import { StreamingComponent } from './streaming/streaming.component';
     ViewFinderComponent,
     HeaderComponent,
     StreamingComponent
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
