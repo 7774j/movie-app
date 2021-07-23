@@ -45,7 +45,7 @@ export class LoginEmailComponent implements OnInit {
         this.userService.loginUser(foundUser).subscribe(user => {
           if (user) {
             this.userLoggedIn.emit(true)
-            this.router.navigate(['home'])
+            this.router.navigate(['/user-accounts'])
           }
         })
       )

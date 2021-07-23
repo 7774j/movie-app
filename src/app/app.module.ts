@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StreamingComponent } from './streaming/streaming.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserAccountsComponent } from './auth/user-accounts/user-accounts.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TrendingComponent,
     ViewFinderComponent,
     HeaderComponent,
-    StreamingComponent
+    StreamingComponent,
+    UserAccountsComponent
 
 
 

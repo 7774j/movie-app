@@ -4,6 +4,7 @@ import { AuthComponent } from './auth.component';
 // Components
 import { LoginEmailComponent } from './login-email/login-email.component';
 import { SignupEmailComponent } from './signup-email/signup-email.component';
+import { UserAccountsComponent } from './user-accounts/user-accounts.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,11 @@ const routes: Routes = [
         path: 'signup',
         pathMatch: 'full',
         component: SignupEmailComponent
+      },
+      {
+        path: 'user-accounts',
+        pathMatch: 'full',
+        component: UserAccountsComponent
       }
     ]
   }

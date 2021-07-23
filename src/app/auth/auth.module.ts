@@ -12,7 +12,8 @@ import { AuthComponent } from './auth.component';
   declarations: [
     LoginEmailComponent,
     SignupEmailComponent,
-    AuthComponent
+    AuthComponent,
+
   ],
   imports: [
     CommonModule,

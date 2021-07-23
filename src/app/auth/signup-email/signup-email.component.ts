@@ -34,6 +34,7 @@ export class SignupEmailComponent implements OnInit, OnDestroy {
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', Validators.compose([Validators.required])],
+      emailConfirmation: ['', Validators.compose([Validators.required])],
       password: ['', Validators.compose([Validators.required, Validators.minLength(4)])],
       passwordConfirmation: ['', Validators.compose([Validators.required, Validators.minLength(4)])],
     }
@@ -56,6 +57,8 @@ export class SignupEmailComponent implements OnInit, OnDestroy {
       this.userService.registerUser(params).subscribe(data => {
         if (data) {
           const newUser = new User(data)
+        } else {
+
         }
       })
     )
