@@ -1,7 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
-import { Movies } from '../models/movie.model';
 
 @Injectable({
   providedIn: 'root'
